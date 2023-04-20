@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>Sign up form</h2>
+    <form id="grid-container" action="" method="post">
+      <label for="full_name">Full name</label>
+      <input type="text" id="full_name" name="full_name" required/>
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" />
+      <label for="username">Username</label>
+      <input type="text" id="username" name="username" />
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" />
+      <label for="password_repeat">Repeat password</label>
+      <input type="password" id="password_repeat" name="password_repeat" />
+
+      <label for="free">Free</label>
+      <input type="radio" id="free" name="payment" value="free"/>
+
+      <label for="cheap">Cheap</label>
+      <input type="radio" id="cheap" name="payment" value="cheap" />
+
+      <label for="fair">Fair</label>
+      <input type="radio" id="fair" name="payment" value="fair" checked />
+
+      <label for="overpriced">Overpriced</label>
+      <input type="radio" id="overpriced" name="payment" value="overpriced" />
+<p>Pay every:</p>
+      <select name="payment_method" id="patment_method">
+        <option value="week">week</option>
+        <option value="month">month</option>
+        <option value="year">year</option>
+      </select>
+      <input
+        type="checkbox"
+        id="newsletter"
+        name="newsletter"
+        value="newsletter"
+      />
+      <label for="spam">I would like to subscribe to newsletter</label>
+      <input
+        type="checkbox"
+        id="spam"
+        name="spam"
+        value="spam" checked
+      />
+      <label for="accept_terms">I accept terms and conditions</label>
+    <input type="submit" id="btn_submit" required disabled>
+    <label for="submit"></label>
+    <input type="button">
+    <label for="clear_data"></label>
+    </form>
+
+    <script src="app.js"></script>
+  </body>
+</html>
